@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Restaurant Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="theme-switch" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+  <header class="admin-hero">
+    <div class="admin-hero-copy">
+      <span class="eyebrow">Admin Dashboard</span>
+      <h1>Royal Restaurant Control</h1>
+      <p>Monitor reservations and orders live from Firebase, with secure controls and modern admin tools for your premium brand.</p>
+      <div class="hero-actions">
+        <a href="index.html" class="btn btn-secondary">Public Site</a>
+        <button id="refreshAdmin" class="btn btn-primary" style="display:none">Refresh Data</button>
+        <button id="logoutBtn" class="btn btn-secondary" style="display:none">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="loginSection" class="panel">
+    <div class="panel-header">
+      <span class="eyebrow">Admin Login</span>
+      <h2>Login to access the dashboard</h2>
+    </div>
+    <form id="loginForm" class="reservation-form">
+      <input type="text" id="adminUsername" placeholder="Admin username" required>
+      <input type="password" id="adminPassword" placeholder="Admin password" required>
+      <button type="submit" class="btn btn-primary">Login</button>
+      <p class="note">Default username is <strong>admin</strong> and default password is <strong>admin123</strong>. Change it after login.</p>
+      <p id="loginMessage" class="note"></p>
+    </form>
+  </section>
+
+  <main id="adminSection" class="panel" style="display: none;">
+    <section class="admin-grid">
+      <div class="admin-card">
+        <h3>Recent Reservations</h3>
+        <div id="reservationList"><p>Loading reservations...</p></div>
+      </div>
+      <div class="admin-card">
+        <h3>Recent Orders</h3>
+        <div id="orderList"><p>Loading orders...</p></div>
+      </div>
+    </section>
+    <section class="panel">
+      <div class="panel-header">
+        <span class="eyebrow">Security</span>
+        <h2>Change admin password</h2>
+      </div>
+      <form id="setPasswordForm" class="reservation-form">
+        <input type="password" id="currentAdminPassword" placeholder="Current password" required>
+        <input type="password" id="newAdminPassword" placeholder="New password" required>
+        <input type="password" id="confirmAdminPassword" placeholder="Confirm new password" required>
+        <button type="submit" class="btn btn-primary">Save password</button>
+        <p id="passwordMessage" class="note"></p>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Firebase Configuration</h2>
+      <p>Update the Firebase config in <code>admin.js</code> and <code>script.js</code> to enable live reservation and order sync.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Royal Restaurant. Admin dashboard for live booking and orders.</p>
+  </footer>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

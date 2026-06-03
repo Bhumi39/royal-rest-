@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Restaurant - Ultra Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="theme-switch" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+
+  <header class="hero" id="home">
+    <nav class="site-nav">
+      <a class="logo" href="#home">Royal</a>
+      <div class="nav-links">
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Reserve</a>
+        <a href="#events">Events</a>
+        <a href="#map">Location</a>
+        <a href="admin.html" class="nav-btn">Admin</a>
+      </div>
+    </nav>
+    <video class="bg-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80">
+      <source src="https://cdn.pixabay.com/vimeo/421573578/restaurant-video-10314.mp4?width=1280&hash=5d7c1c46e3587d5d2c24d1a1c0c54df4f5ed2b1e" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-copy">
+      <span class="eyebrow">Ultra Premium Dining</span>
+      <h1>Royal Restaurant</h1>
+      <p>Book tables online, order gourmet meals, pay instantly, and enjoy premium service with a luxury dining experience.</p>
+      <div class="hero-actions">
+        <a href="#reservation" class="btn btn-primary">Reserve a Table</a>
+        <a href="#menu" class="btn btn-secondary">Discover Menu</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>120+</strong> curated dishes</div>
+        <div><strong>24/7</strong> online booking</div>
+        <div><strong>Scan and Pay</strong> secure checkout</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel intro-panel" id="intro">
+      <div class="panel-copy">
+        <span class="eyebrow">Welcome to Royal</span>
+        <h2>Premium restaurant experience with real-time booking and ordering</h2>
+        <p>From chef-curated menus to live events and seamless digital payments, everything is built for an ultra-premium food brand.</p>
+      </div>
+      <div class="featured-stats">
+        <div class="stat-card"><span>4.9</span><p>Guest Rating</p></div>
+        <div class="stat-card"><span>8</span><p>Events Monthly</p></div>
+        <div class="stat-card"><span>trusted</span><p>by food lovers</p></div>
+      </div>
+    </section>
+
+    <section class="panel" id="menu">
+      <div class="panel-header">
+        <span class="eyebrow">Menu</span>
+        <h2>Signature dishes for every mood</h2>
+      </div>
+      <div class="cards-grid">
+        <article class="menu-card" data-id="truffle-pizza">
+          <div class="menu-icon">🍕</div>
+          <h3>White Truffle Pizza</h3>
+          <p>Stone-baked crust, premium mozzarella, basil oil, and white truffle.</p>
+          <div class="menu-footer"><span>₹899</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="wagyu-burger">
+          <div class="menu-icon">🍔</div>
+          <h3>Wagyu Burger</h3>
+          <p>Juicy wagyu patty, aged cheddar, caramelized onions, and signature sauce.</p>
+          <div class="menu-footer"><span>₹1099</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="lobster-pasta">
+          <div class="menu-icon">🍝</div>
+          <h3>Lobster Tagliatelle</h3>
+          <p>Fresh lobster, saffron cream, heirloom tomatoes, and basil gremolata.</p>
+          <div class="menu-footer"><span>₹1299</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="molten-cake">
+          <div class="menu-icon">🍰</div>
+          <h3>Chocolate Molten Cake</h3>
+          <p>Warm dark chocolate cake with raspberry coulis and vanilla bean cream.</p>
+          <div class="menu-footer"><span>₹599</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="butter-chicken">
+          <div class="menu-icon">🍗</div>
+          <h3>Butter Chicken</h3>
+          <p>Rich tomato gravy, cream, and tender chicken tikka served with naan.</p>
+          <div class="menu-footer"><span>₹699</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="dal-makhani">
+          <div class="menu-icon">🍲</div>
+          <h3>Dal Makhani</h3>
+          <p>Creamy black lentils simmered with butter, spices, and slow-cooked flavor.</p>
+          <div class="menu-footer"><span>₹349</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="paneer-tikka-masala">
+          <div class="menu-icon">🧀</div>
+          <h3>Paneer Tikka Masala</h3>
+          <p>Smoky paneer cubes in a spiced tomato cream sauce.</p>
+          <div class="menu-footer"><span>₹499</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="hyderabadi-biryani">
+          <div class="menu-icon">🍛</div>
+          <h3>Hyderabadi Biryani</h3>
+          <p>Fragrant rice with saffron, spices, and slow-cooked meat layers.</p>
+          <div class="menu-footer"><span>₹849</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="masala-dosa">
+          <div class="menu-icon">🥞</div>
+          <h3>Masala Dosa</h3>
+          <p>Crisp rice crepe filled with spiced potato and served with chutneys.</p>
+          <div class="menu-footer"><span>₹299</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="kerala-prawn-curry">
+          <div class="menu-icon">🦐</div>
+          <h3>Kerala Prawn Curry</h3>
+          <p>Coastal prawns in coconut-tamarind sauce with curry leaves.</p>
+          <div class="menu-footer"><span>₹799</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="litti-chokha">
+          <div class="menu-icon">🥔</div>
+          <h3>Litti Chokha</h3>
+          <p>Smoky stuffed wheat balls with mashed spiced vegetables and ghee.</p>
+          <div class="menu-footer"><span>₹379</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="chole-bhature">
+          <div class="menu-icon">🥯</div>
+          <h3>Chole Bhature</h3>
+          <p>Spicy chickpea curry with fluffy fried bread and tangy pickles.</p>
+          <div class="menu-footer"><span>₹329</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="rajma-chawal">
+          <div class="menu-icon">🍛</div>
+          <h3>Rajma Chawal</h3>
+          <p>Comforting red kidney bean curry served with steamed basmati rice.</p>
+          <div class="menu-footer"><span>₹279</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="tandoori-chicken">
+          <div class="menu-icon">🍖</div>
+          <h3>Tandoori Chicken</h3>
+          <p>Juicy chicken marinated in yogurt and spices, roasted in the tandoor.</p>
+          <div class="menu-footer"><span>₹649</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="fish-amritsari">
+          <div class="menu-icon">🐟</div>
+          <h3>Fish Amritsari</h3>
+          <p>Spiced fried fish with chickpea flour crust and mint chutney.</p>
+          <div class="menu-footer"><span>₹549</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="prawn-ghee-roast">
+          <div class="menu-icon">🦐</div>
+          <h3>Prawn Ghee Roast</h3>
+          <p>Rich coastal prawns sautéed in spicy ghee masala.</p>
+          <div class="menu-footer"><span>₹799</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="kadai-paneer">
+          <div class="menu-icon">🥘</div>
+          <h3>Kadai Paneer</h3>
+          <p>Paneer cubes in a bold tomato and bell pepper gravy.</p>
+          <div class="menu-footer"><span>₹459</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="pav-bhaji">
+          <div class="menu-icon">🥪</div>
+          <h3>Pav Bhaji</h3>
+          <p>Sloppy vegetable mash with toasted butter buns and onion salad.</p>
+          <div class="menu-footer"><span>₹329</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="kathi-roll">
+          <div class="menu-icon">🌯</div>
+          <h3>Kolkata Kathi Roll</h3>
+          <p>Egg-wrapped chicken roll with onions, sauces, and masala spices.</p>
+          <div class="menu-footer"><span>₹279</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="goan-fish-curry">
+          <div class="menu-icon">🐠</div>
+          <h3>Goan Fish Curry</h3>
+          <p>Tangy coconut curry with fresh fish and kokum notes.</p>
+          <div class="menu-footer"><span>₹799</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="malabar-parotta">
+          <div class="menu-icon">🥞</div>
+          <h3>Malabar Parotta</h3>
+          <p>Flaky layered flatbread served with Kerala-style curry.</p>
+          <div class="menu-footer"><span>₹249</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="samosa-chaat">
+          <div class="menu-icon">🥟</div>
+          <h3>Samosa Chaat</h3>
+          <p>Crispy samosas topped with tamarind chutney, yogurt, and sev.</p>
+          <div class="menu-footer"><span>₹219</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="galouti-kebab">
+          <div class="menu-icon">🥩</div>
+          <h3>Galouti Kebab</h3>
+          <p>Soft melt-in-mouth kebabs with paratha and mint chutney.</p>
+          <div class="menu-footer"><span>₹499</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="thai-green-curry">
+          <div class="menu-icon">🥥</div>
+          <h3>Thai Green Curry</h3>
+          <p>Fragrant coconut curry with vegetables and basil leaves.</p>
+          <div class="menu-footer"><span>₹649</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="ramen-bowl">
+          <div class="menu-icon">🍜</div>
+          <h3>Japanese Ramen Bowl</h3>
+          <p>Umami broth with noodles, egg, greens, and tender pork slices.</p>
+          <div class="menu-footer"><span>₹799</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="mexican-tacos">
+          <div class="menu-icon">🌮</div>
+          <h3>Mexican Tacos Trio</h3>
+          <p>Three tacos with chicken, paneer, and spicy salsa.</p>
+          <div class="menu-footer"><span>₹499</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="falafel-wrap">
+          <div class="menu-icon">🥙</div>
+          <h3>Mediterranean Falafel Wrap</h3>
+          <p>Crispy falafel, hummus, pickles, and tahini in a warm wrap.</p>
+          <div class="menu-footer"><span>₹399</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="sushi-deluxe">
+          <div class="menu-icon">🍣</div>
+          <h3>Sushi Deluxe</h3>
+          <p>Assorted nigiri and rolls with fresh fish and avocado.</p>
+          <div class="menu-footer"><span>₹1199</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+        <article class="menu-card" data-id="tiramisu-cheesecake">
+          <div class="menu-icon">🍮</div>
+          <h3>Tiramisu Cheesecake</h3>
+          <p>Creamy espresso cheesecake with cocoa dusting and berry glaze.</p>
+          <div class="menu-footer"><span>₹649</span><button class="btn-text add-to-cart">Add to cart</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel split-panel" id="chef">
+      <div>
+        <span class="eyebrow">Chef's Table</span>
+        <h2>Meet the artists behind every plate</h2>
+        <p>Our culinary team blends modern technique and classic taste to deliver unforgettable meals.</p>
+        <div class="team-grid">
+          <div class="team-card"><strong>Chef Aarav</strong><p>Executive Chef & Head of Culinary</p></div>
+          <div class="team-card"><strong>Chef Meera</strong><p>Pastry Specialist & Dessert Curator</p></div>
+          <div class="team-card"><strong>Chef Riya</strong><p>Seafood and Grill Master</p></div>
+        </div>
+      </div>
+      <div class="feature-box">
+        <h3>Online table booking backend</h3>
+        <p>Reservations are recorded instantly and synced with a live Firebase database for fast confirmations.</p>
+      </div>
+    </section>
+
+    <section class="panel" id="reservation">
+      <div class="panel-header">
+        <span class="eyebrow">Reservations</span>
+        <h2>Reserve your table and share billing details</h2>
+      </div>
+      <div class="reservation-grid">
+        <form id="reservationForm" class="reservation-form">
+          <input type="text" id="name" placeholder="Full Name" required>
+          <input type="email" id="email" placeholder="Email Address" required>
+          <input type="tel" id="phone" placeholder="Phone Number" required>
+          <div class="form-row">
+            <input type="date" id="date" required>
+            <input type="time" id="time" required>
+          </div>
+          <div class="form-row">
+            <select id="guests" required>
+              <option value="">Guests</option>
+              <option value="2">2 People</option>
+              <option value="4">4 People</option>
+              <option value="6">6 People</option>
+              <option value="8">8+ People</option>
+            </select>
+            <select id="occasion" required>
+              <option value="">Occasion</option>
+              <option value="date">Date Night</option>
+              <option value="family">Family Dinner</option>
+              <option value="celebration">Celebration</option>
+              <option value="business">Business Meet</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Book Now</button>
+          <p class="note">Please enter your name, email and phone number for the bill and order confirmation.</p>
+        </form>
+        <div class="reservation-summary">
+          <div class="feature-box">
+            <h3>Live Reservation Sync</h3>
+            <p>Every booking is pushed to a Firebase collection and ready for your admin dashboard.</p>
+          </div>
+          <div class="feature-box">
+            <h3>Google Maps Location</h3>
+            <p>Customers can find you instantly with an embedded map and address details.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="events">
+      <div class="panel-header">
+        <span class="eyebrow">Events</span>
+        <h2>Curated experiences every week</h2>
+      </div>
+      <div class="events-grid">
+        <article class="event-card"><h3>Weekend Jazz Nights</h3><p>Live music with a candlelit menu.</p></article>
+        <article class="event-card"><h3>Chef's Tasting Menu</h3><p>Seasonal tasting experiences by reservation.</p></article>
+        <article class="event-card"><h3>Corporate Brunches</h3><p>Private tables and bespoke group menus.</p></article>
+      </div>
+    </section>
+
+    <section class="panel" id="cart">
+      <div class="panel-header">
+        <span class="eyebrow">Order Online</span>
+        <h2>Your cart is ready for checkout</h2>
+      </div>
+      <div class="cart-panel">
+        <div class="cart-items" id="cartItems">
+          <p class="empty">Add a dish from the menu to begin.</p>
+        </div>
+        <div class="cart-summary">
+          <div>
+            <h3>Order Summary</h3>
+            <p id="cartTotal">₹0</p>
+          </div>
+          <button id="checkoutBtn" class="btn btn-primary" disabled>Scan and Pay</button>
+          <p class="note">Scan and Pay integration is ready to connect using a production key.</p>
+          <div id="orderReceipt" class="order-receipt"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="testimonials">
+      <div class="panel-header">
+        <span class="eyebrow">Testimonials</span>
+        <h2>What our guests are saying</h2>
+      </div>
+      <div class="testimonial-slider" id="testimonialSlider">
+        <article class="testimonial active"><p>"The ambience, food, and service were impeccable. The online booking made our evening effortless."</p><strong>— Nisha R.</strong></article>
+        <article class="testimonial"><p>"Ordering online was seamless, and the Razorpay checkout felt fast and secure."</p><strong>— Karan S.</strong></article>
+        <article class="testimonial"><p>"The chef's tasting menu is a must-try. Amazing flavors and presentation."</p><strong>— Priya M.</strong></article>
+      </div>
+    </section>
+
+    <section class="panel" id="map">
+      <div class="panel-header">
+        <span class="eyebrow">Location</span>
+        <h2>Find us on Google Maps</h2>
+      </div>
+      <div class="map-grid">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11653631858!2d72.7410991163452!3d19.082197839796616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b64e5d5b7b7d%3A0xcca5688d08c46693!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-copy">
+          <h3>Royal Restaurant</h3>
+          <p>Luxury dining at the heart of the city, with private tables, live events, and curated menus.</p>
+          <p><strong>Address:</strong> Marine Drive, Mumbai</p>
+          <p><strong>Open:</strong> Daily 11am – 12am</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel admin-panel" id="admin">
+      <div class="panel-header">
+        <span class="eyebrow">Admin Panel</span>
+        <h2>Live Firebase dashboard</h2>
+      </div>
+      <div class="admin-grid">
+        <div class="admin-card">
+          <h3>Manage Bookings</h3>
+          <p>Review recent reservations coming from the online booking form.</p>
+          <button id="refreshAdmin" class="btn btn-secondary">Refresh Data</button>
+        </div>
+        <div class="admin-card admin-data">
+          <h3>Latest submissions</h3>
+          <div id="adminContent">
+            <p>Connect your Firebase config in <code>script.js</code> to load live data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Royal Restaurant. Built for ultra-premium dining, online reservations, and secure payments.</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</body>
+</html>
