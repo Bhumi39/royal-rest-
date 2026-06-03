@@ -1,5 +1,9 @@
 # Royal Restaurant Website
 
+Created by Bhumi Kashyap
+
+Contact: bhumikashyap1505@gmail.com
+
 A refined restaurant landing page with an online ordering cart, reservation system, and a protected admin dashboard.
 
 ## Project overview
